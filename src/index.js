@@ -7,7 +7,8 @@ import registerServiceWorker from './registerServiceWorker';
 let model = {clicks: 0}
 
 function render() {
-    ReactDOM.render(<Ancestor1 onClick={() => { model.clicks += 1; render()}} clicks={model.clicks}/>, document.getElementById('root'));
+    ReactDOM.render(<Ancestor1 onClick={() => { model.clicks += 1; render()}} clicks={model.clicks}/>, 
+     document.getElementById('root'));
 }
 
 render()
